@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NOX — LOXLEY by Virtuals | $NOX</title>
-  <meta name="description" content="NOX — the ASCII robot easter egg from Robinhood's robots.txt. Now on-chain as $NOX." />
+  <title>NOX — LOXLEY by Virtuals | Open source, funded like Robin Hood</title>
+  <meta name="description" content="Loxley makes open source a cashflow asset on Robinhood Chain. Register a GitHub repo, mint its Arrow, and let anyone pay tribute in ETH — split pro-rata to every holder. $NOX." />
   <meta name="theme-color" content="#050508" />
-  <meta property="og:title" content="LOXLEY by Virtuals | $NOX" />
+  <meta property="og:title" content="LOXLEY — Open source, funded like Robin Hood | $NOX" />
   <meta property="og:image" content="assets/banner.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
@@ -38,7 +38,8 @@
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#registry">Registry</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#lore">Lore</a></li>
         <li><a href="#chart">Chart</a></li>
         <li><a href="#buy">Buy</a></li>
         <li class="nav-socials">
@@ -47,7 +48,7 @@
           </a>
         </li>
         <li>
-          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="nav-cta">Buy $NOX</a>
+          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xF4383300EEAC38282C6AAC3116ecbbd57AA305f4" target="_blank" rel="noopener noreferrer" class="nav-cta">Buy $NOX</a>
         </li>
       </ul>
       <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
@@ -65,13 +66,13 @@
 
     <div class="hero-layout">
       <div class="hero-content">
-        <p class="hero-eyebrow"><span class="pulse-dot"></span> Sherwood Registry · on-chain</p>
+        <p class="hero-eyebrow"><span class="pulse-dot"></span> MVP · Robinhood Chain · Sherwood Registry</p>
         <p class="hero-brand" data-text="NOX">NOX</p>
-        <h1 class="hero-title"><span class="tag">&lt;</span>LOXLEY<span class="tag">/&gt;</span> by Virtuals</h1>
-        <p class="hero-lede">The ASCII robot from Robinhood’s robots.txt — now loose on-chain as <strong>$NOX</strong>.</p>
+        <h1 class="hero-title">Turn a repo into an <span class="accent">Arrow</span> that pays everyone who holds it.</h1>
+        <p class="hero-lede">Loxley makes open source a cashflow asset. Register a GitHub repo, mint its Arrow, and let anyone pay tribute in ETH — split pro-rata to every holder, collectable on-chain. <strong>Open source, funded like Robin Hood.</strong></p>
         <div class="hero-actions">
-          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">Buy $NOX</a>
-          <a href="#about" class="btn btn-ghost">Meet the bot</a>
+          <a href="https://www.loxleyhood.xyz/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">Enter the Quiver →</a>
+          <a href="#how-it-works" class="btn btn-ghost">How it works</a>
         </div>
       </div>
 
@@ -89,11 +90,11 @@
 <span class="ln">08</span> }
 <span class="ln">09</span>
 <span class="ln">10</span> <span class="kw">function</span> <span class="fn">registerRepo</span>(<span class="ty">address</span> repo) <span class="kw">external</span> {
-<span class="ln">11</span>   <span class="cm">// Register a new repository</span>
+<span class="ln">11</span>   <span class="cm">// Point Sherwood at a GitHub repo</span>
 <span class="ln">12</span> }
 <span class="ln">13</span>
 <span class="ln">14</span> <span class="kw">function</span> <span class="fn">tribute</span>(<span class="ty">address</span> repo) <span class="kw">external payable</span> {
-<span class="ln">15</span>   <span class="cm">// Pay tribute to support a repo</span>
+<span class="ln">15</span>   <span class="cm">// ETH split pro-rata to all Arrow holders</span>
 <span class="ln">16</span> }
 <span class="ln">17</span>
 <span class="ln">18</span> <span class="kw">function</span> <span class="fn">bounty</span>(<span class="ty">uint256</span> id) <span class="kw">external</span> {</code><span class="terminal-cursor" aria-hidden="true"></span></pre>
@@ -108,25 +109,33 @@
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>&lt;*Exterminate all humans.txt*&gt;</span>
+      <span>Open source, funded like Robin Hood</span>
+      <span class="ticker-sep">·</span>
+      <span>registerRepo()</span>
+      <span class="ticker-sep">·</span>
+      <span>tribute()</span>
+      <span class="ticker-sep">·</span>
+      <span>bounty()</span>
+      <span class="ticker-sep">·</span>
+      <span>Sherwood.sol</span>
+      <span class="ticker-sep">·</span>
+      <span>Arrow.sol</span>
       <span class="ticker-sep">·</span>
       <span>$NOX</span>
       <span class="ticker-sep">·</span>
-      <span>User-agent: *</span>
+      <span>Open source, funded like Robin Hood</span>
       <span class="ticker-sep">·</span>
-      <span>Allow: /meme/</span>
+      <span>registerRepo()</span>
       <span class="ticker-sep">·</span>
-      <span>Disallow: /humans/</span>
+      <span>tribute()</span>
       <span class="ticker-sep">·</span>
-      <span>&lt;*Exterminate all humans.txt*&gt;</span>
+      <span>bounty()</span>
+      <span class="ticker-sep">·</span>
+      <span>Sherwood.sol</span>
+      <span class="ticker-sep">·</span>
+      <span>Arrow.sol</span>
       <span class="ticker-sep">·</span>
       <span>$NOX</span>
-      <span class="ticker-sep">·</span>
-      <span>User-agent: *</span>
-      <span class="ticker-sep">·</span>
-      <span>Allow: /meme/</span>
-      <span class="ticker-sep">·</span>
-      <span>Disallow: /humans/</span>
       <span class="ticker-sep">·</span>
     </div>
   </div>
@@ -143,27 +152,30 @@
           </div>
         </div>
         <div class="about-copy reveal">
-          <p class="eyebrow">robots.txt // easter egg</p>
-          <h2 class="section-title">Born in plain text.<br /><span class="accent">Built for the chain.</span></h2>
+          <p class="eyebrow">the lore // robin hood, on-chain</p>
+          <h2 class="section-title">Born in plain text.<br /><span class="accent">Funded like Robin Hood.</span></h2>
           <p class="section-text">
             <strong>HoodBot</strong> was found as a text-file easter egg on Robinhood’s website — an ASCII robot whispering
-            <em>&lt;*Exterminate all humans.txt*&gt;</em>. That hidden line was left for everyone to find. Now it’s a meme with a contract.
+            <em>&lt;*Exterminate all humans.txt*&gt;</em>. That hidden line became community lore. <strong>Loxley</strong> carries it forward: open source as a cashflow asset on Robinhood Chain, where repos earn tribute and holders collect bounty.
+          </p>
+          <p class="section-text">
+            Point <strong>Sherwood</strong> at a GitHub repo, mint its <strong>Arrow</strong>, and let anyone fund the work in ETH — split pro-rata to every holder, collectable on-chain.
           </p>
           <p class="section-text mono-note">
-            <span class="cursor-line">User-agent: *<span class="cursor" aria-hidden="true"></span></span>
+            <span class="cursor-line">perShare += msg.value / totalSupply<span class="cursor" aria-hidden="true"></span></span>
           </p>
           <div class="stat-row">
             <div class="stat">
-              <span class="stat-val">ASCII</span>
-              <span class="stat-label">origin</span>
+              <span class="stat-val">Sherwood</span>
+              <span class="stat-label">registry</span>
             </div>
             <div class="stat">
-              <span class="stat-val">$NOX</span>
-              <span class="stat-label">ticker</span>
+              <span class="stat-val">Arrow</span>
+              <span class="stat-label">per repo</span>
             </div>
             <div class="stat">
-              <span class="stat-val">∞</span>
-              <span class="stat-label">meme energy</span>
+              <span class="stat-val">Tribute</span>
+              <span class="stat-label">ETH splits</span>
             </div>
           </div>
         </div>
@@ -174,20 +186,81 @@
       <pre>|_o_|  ( o )  [www]  /vvvv/  &lt;*Exterminate all humans.txt*&gt;  |_o_|  ( o )  [www]  /vvvv/  &lt;*Exterminate all humans.txt*&gt;  |_o_|  ( o )  [www]  /vvvv/</pre>
     </div>
 
-    <section class="section registry" id="registry">
+    <section class="section how-it-works" id="how-it-works">
+      <div class="container">
+        <p class="eyebrow center">how it works</p>
+        <h2 class="section-title center">Four steps from repo to revenue.</h2>
+        <p class="section-sub center">Cashflow that scales to any number of holders — the magnified-dividend pattern makes every tribute O(1).</p>
+        <div class="steps steps--four">
+          <article class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Register a repo</h3>
+            <p>Point Sherwood at a GitHub repo. It records it on-chain and mints its Arrow — the full supply to you.</p>
+            <code class="step-fn">registerRepo()</code>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Mint its Arrow</h3>
+            <p>Each repo gets its own ERC-20. Holding an Arrow is holding a share of everything that repo earns.</p>
+            <code class="step-fn">Arrow.sol</code>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Anyone pays Tribute</h3>
+            <p>Users, sponsors, or grateful downstreams send ETH to the repo. It splits pro-rata across all holders instantly.</p>
+            <code class="step-fn">tribute()</code>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">04</span>
+            <h3>Holders collect Bounty</h3>
+            <p>Your share accrues with every tribute. Pull it to your wallet whenever you want — the math is O(1).</p>
+            <code class="step-fn">bounty()</code>
+          </article>
+        </div>
+        <div class="mechanic-box reveal">
+          <pre class="mechanic-code"><code>tribute():  perShare += msg.value / totalSupply
+bountyOf(a): balance(a) * perShare − collected(a)
+bounty():   send you your share, mark collected</code></pre>
+        </div>
+        <div class="registry-cta">
+          <a href="https://www.loxleyhood.xyz/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">Enter the Quiver on Loxley →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lore" id="lore">
       <div class="container registry-layout reveal">
         <div class="registry-copy">
-          <p class="eyebrow">sherwood registry</p>
-          <h2 class="section-title">Code on the banner.<br /><span class="accent">Culture on-chain.</span></h2>
-          <p class="section-text">
-            LOXLEY lives where dev culture meets degen energy — neon terminals, hidden robots.txt lore, and a community registry that pays tribute to the repos (and memes) we actually care about.
-          </p>
+          <p class="eyebrow">the lore</p>
+          <h2 class="section-title">Robin Hood,<br /><span class="accent">on-chain.</span></h2>
+          <dl class="lore-list">
+            <div class="lore-item">
+              <dt>Sherwood</dt>
+              <dd>The registry + factory — the forest that holds every repo. <code>Sherwood.sol</code></dd>
+            </div>
+            <div class="lore-item">
+              <dt>Arrow</dt>
+              <dd>A single repo’s ERC-20 token. Hold it, earn from it. <code>Arrow.sol</code></dd>
+            </div>
+            <div class="lore-item">
+              <dt>Quiver</dt>
+              <dd>The full collection of registered repos.</dd>
+            </div>
+            <div class="lore-item">
+              <dt>Tribute</dt>
+              <dd>Funding a repo with ETH. Split pro-rata to holders. <code>tribute()</code></dd>
+            </div>
+            <div class="lore-item">
+              <dt>Bounty</dt>
+              <dd>A holder’s claimable ETH share of all tribute. <code>bounty()</code></dd>
+            </div>
+          </dl>
         </div>
         <div class="registry-banner-card">
           <img src="assets/banner.jpg" alt="LOXLEY Sherwood Registry banner" class="registry-banner-img" />
           <div class="registry-banner-overlay">
             <span class="registry-tag">&lt;LOXLEY/&gt;</span>
-            <span class="registry-sub">Sherwood Registry</span>
+            <span class="registry-sub">Sherwood Registry · Open source, funded like Robin Hood</span>
           </div>
         </div>
       </div>
@@ -198,7 +271,7 @@
         <p class="eyebrow center">on-chain</p>
         <h2 class="section-title center">Token Address</h2>
         <div class="ca-box">
-          <code id="ca-display" class="ca-address">0xcomingsoon</code>
+          <code id="ca-display" class="ca-address">0xF4383300EEAC38282C6AAC3116ecbbd57AA305f4</code>
           <button id="copy-ca" class="btn btn-primary btn-copy" type="button" title="Copy address">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
             <span>Copy</span>
@@ -212,20 +285,20 @@
       <div class="container reveal">
         <p class="eyebrow center">live feed</p>
         <h2 class="section-title center">DexScreener</h2>
-        <p class="section-sub center">Watch $NOX move in real time. Not financial advice.</p>
+        <p class="section-sub center">Track $NOX on Robinhood Chain. Not financial advice — DYOR.</p>
         <div class="chart-frame">
           <div class="chart-frame-glow" aria-hidden="true"></div>
           <iframe
             id="dexscreener-embed"
             class="dexscreener-embed"
             title="DexScreener $NOX Chart"
-            src="https://dexscreener.com/robinhood/0xcomingsoon?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&chartStyle=1&chartType=usd&interval=15"
+            src="https://dexscreener.com/robinhood/0xF4383300EEAC38282C6AAC3116ecbbd57AA305f4?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&chartStyle=1&chartType=usd&interval=15"
             allow="clipboard-write"
             loading="lazy"
           ></iframe>
         </div>
         <div class="chart-link-wrap">
-          <a id="dexscreener-link" href="https://dexscreener.com/robinhood/0xcomingsoon" target="_blank" rel="noopener noreferrer" class="text-link">
+          <a id="dexscreener-link" href="https://dexscreener.com/robinhood/0xF4383300EEAC38282C6AAC3116ecbbd57AA305f4" target="_blank" rel="noopener noreferrer" class="text-link">
             Open full chart on DexScreener →
           </a>
         </div>
@@ -234,27 +307,28 @@
 
     <section class="section buy" id="buy">
       <div class="container">
-        <p class="eyebrow center">get in</p>
-        <h2 class="section-title center">How To Buy</h2>
+        <p class="eyebrow center">get $NOX</p>
+        <h2 class="section-title center">How To Buy $NOX</h2>
+        <p class="section-sub center">Hold the community token tied to the Loxley ecosystem on Robinhood Chain.</p>
         <div class="steps">
           <article class="step reveal">
             <span class="step-num">01</span>
             <h3>Wallet</h3>
-            <p>Set up a wallet that supports Ethereum. Fund it with ETH.</p>
+            <p>Set up a wallet that supports Robinhood Chain. Fund it with ETH.</p>
           </article>
           <article class="step reveal">
             <span class="step-num">02</span>
             <h3>Uniswap</h3>
-            <p>Open Uniswap, connect your wallet, and paste the verified $NOX contract.</p>
+            <p>Open Uniswap on Robinhood Chain, connect your wallet, and paste the verified $NOX contract.</p>
           </article>
           <article class="step reveal">
             <span class="step-num">03</span>
             <h3>Swap</h3>
-            <p>Swap ETH → $NOX. Double-check the address, then confirm.</p>
+            <p>Swap ETH → $NOX. Double-check the contract address, then confirm the trade.</p>
           </article>
         </div>
         <div class="buy-cta">
-          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-ink btn-lg btn-glow">Buy on Uniswap</a>
+          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xF4383300EEAC38282C6AAC3116ecbbd57AA305f4" target="_blank" rel="noopener noreferrer" class="btn btn-ink btn-lg btn-glow">Buy on Uniswap</a>
           <a href="https://x.com/HOODBOTX" target="_blank" rel="noopener noreferrer" class="btn btn-outline-ink btn-lg">Follow on X</a>
         </div>
       </div>
@@ -269,12 +343,12 @@
         </span>
         <div>
           <strong>NOX</strong>
-          <span>&lt;*Exterminate all humans.txt*&gt;</span>
+          <span>Open source, funded like Robin Hood</span>
         </div>
       </div>
       <p class="footer-disclaimer">
-        $NOX is a meme token with no intrinsic value or expectation of financial return.
-        This is not financial advice. DYOR. Community-driven.
+        $NOX is a community token. Loxley protocol mechanics are experimental — not financial advice.
+        DYOR. <a href="https://www.loxleyhood.xyz/" target="_blank" rel="noopener noreferrer" class="text-link">loxleyhood.xyz</a>
       </p>
     </div>
   </footer>
