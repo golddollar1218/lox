@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOX — LOXLEY by Virtuals | $NOX</title>
+  <meta name="description" content="NOX — the ASCII robot easter egg from Robinhood's robots.txt. Now on-chain as $NOX." />
+  <meta name="theme-color" content="#050508" />
+  <meta property="og:title" content="LOXLEY by Virtuals | $NOX" />
+  <meta property="og:image" content="assets/banner.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb--a"></div>
+    <div class="ambient-orb ambient-orb--b"></div>
+    <img src="assets/glow-orb.svg" alt="" class="ambient-svg ambient-svg--1" />
+    <img src="assets/glow-orb.svg" alt="" class="ambient-svg ambient-svg--2" />
+  </div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="nav-brand">
+        <span class="nav-mark-wrap">
+          <img src="assets/logo.jpg" alt="" class="nav-mark" />
+          <span class="nav-mark-glow"></span>
+        </span>
+        <span class="nav-wordmark">NOX</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li><a href="#chart">Chart</a></li>
+        <li><a href="#buy">Buy</a></li>
+        <li class="nav-socials">
+          <a href="https://x.com/HOODBOTX" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="nav-cta">Buy $NOX</a>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-visual" aria-hidden="true">
+      <img src="assets/banner.jpg" alt="" class="hero-banner" />
+      <div class="hero-veil"></div>
+      <div class="hero-noise"></div>
+    </div>
+
+    <div class="hero-layout">
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="pulse-dot"></span> Sherwood Registry · on-chain</p>
+        <p class="hero-brand" data-text="NOX">NOX</p>
+        <h1 class="hero-title"><span class="tag">&lt;</span>LOXLEY<span class="tag">/&gt;</span> by Virtuals</h1>
+        <p class="hero-lede">The ASCII robot from Robinhood’s robots.txt — now loose on-chain as <strong>$NOX</strong>.</p>
+        <div class="hero-actions">
+          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">Buy $NOX</a>
+          <a href="#about" class="btn btn-ghost">Meet the bot</a>
+        </div>
+      </div>
+
+      <aside class="hero-terminal reveal" aria-label="Sample registry code">
+        <div class="terminal-chrome">
+          <span class="terminal-dot"></span>
+          <span class="terminal-dot"></span>
+          <span class="terminal-dot"></span>
+          <span class="terminal-title">SherwoodRegistry.sol</span>
+        </div>
+        <pre class="terminal-body"><code><span class="ln">04</span> <span class="kw">struct</span> <span class="ty">Repo</span> {
+<span class="ln">05</span>   <span class="ty">address</span> owner;
+<span class="ln">06</span>   <span class="ty">string</span> metadataURI;
+<span class="ln">07</span>   <span class="ty">uint256</span> registeredAt;
+<span class="ln">08</span> }
+<span class="ln">09</span>
+<span class="ln">10</span> <span class="kw">function</span> <span class="fn">registerRepo</span>(<span class="ty">address</span> repo) <span class="kw">external</span> {
+<span class="ln">11</span>   <span class="cm">// Register a new repository</span>
+<span class="ln">12</span> }
+<span class="ln">13</span>
+<span class="ln">14</span> <span class="kw">function</span> <span class="fn">tribute</span>(<span class="ty">address</span> repo) <span class="kw">external payable</span> {
+<span class="ln">15</span>   <span class="cm">// Pay tribute to support a repo</span>
+<span class="ln">16</span> }
+<span class="ln">17</span>
+<span class="ln">18</span> <span class="kw">function</span> <span class="fn">bounty</span>(<span class="ty">uint256</span> id) <span class="kw">external</span> {</code><span class="terminal-cursor" aria-hidden="true"></span></pre>
+      </aside>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>scroll</span>
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 16l-6-6h12z"/></svg>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>&lt;*Exterminate all humans.txt*&gt;</span>
+      <span class="ticker-sep">·</span>
+      <span>$NOX</span>
+      <span class="ticker-sep">·</span>
+      <span>User-agent: *</span>
+      <span class="ticker-sep">·</span>
+      <span>Allow: /meme/</span>
+      <span class="ticker-sep">·</span>
+      <span>Disallow: /humans/</span>
+      <span class="ticker-sep">·</span>
+      <span>&lt;*Exterminate all humans.txt*&gt;</span>
+      <span class="ticker-sep">·</span>
+      <span>$NOX</span>
+      <span class="ticker-sep">·</span>
+      <span>User-agent: *</span>
+      <span class="ticker-sep">·</span>
+      <span>Allow: /meme/</span>
+      <span class="ticker-sep">·</span>
+      <span>Disallow: /humans/</span>
+      <span class="ticker-sep">·</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="section about" id="about">
+      <div class="container about-layout">
+        <div class="about-portrait reveal">
+          <img src="assets/corner-bracket.svg" alt="" class="portrait-bracket portrait-bracket--tl" />
+          <img src="assets/corner-bracket.svg" alt="" class="portrait-bracket portrait-bracket--br" />
+          <div class="portrait-frame">
+            <img src="assets/logo.jpg" alt="NOX — neon mark" />
+            <div class="portrait-shine"></div>
+          </div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">robots.txt // easter egg</p>
+          <h2 class="section-title">Born in plain text.<br /><span class="accent">Built for the chain.</span></h2>
+          <p class="section-text">
+            <strong>HoodBot</strong> was found as a text-file easter egg on Robinhood’s website — an ASCII robot whispering
+            <em>&lt;*Exterminate all humans.txt*&gt;</em>. That hidden line was left for everyone to find. Now it’s a meme with a contract.
+          </p>
+          <p class="section-text mono-note">
+            <span class="cursor-line">User-agent: *<span class="cursor" aria-hidden="true"></span></span>
+          </p>
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-val">ASCII</span>
+              <span class="stat-label">origin</span>
+            </div>
+            <div class="stat">
+              <span class="stat-val">$NOX</span>
+              <span class="stat-label">ticker</span>
+            </div>
+            <div class="stat">
+              <span class="stat-val">∞</span>
+              <span class="stat-label">meme energy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ascii-band" aria-hidden="true">
+      <pre>|_o_|  ( o )  [www]  /vvvv/  &lt;*Exterminate all humans.txt*&gt;  |_o_|  ( o )  [www]  /vvvv/  &lt;*Exterminate all humans.txt*&gt;  |_o_|  ( o )  [www]  /vvvv/</pre>
+    </div>
+
+    <section class="section registry" id="registry">
+      <div class="container registry-layout reveal">
+        <div class="registry-copy">
+          <p class="eyebrow">sherwood registry</p>
+          <h2 class="section-title">Code on the banner.<br /><span class="accent">Culture on-chain.</span></h2>
+          <p class="section-text">
+            LOXLEY lives where dev culture meets degen energy — neon terminals, hidden robots.txt lore, and a community registry that pays tribute to the repos (and memes) we actually care about.
+          </p>
+        </div>
+        <div class="registry-banner-card">
+          <img src="assets/banner.jpg" alt="LOXLEY Sherwood Registry banner" class="registry-banner-img" />
+          <div class="registry-banner-overlay">
+            <span class="registry-tag">&lt;LOXLEY/&gt;</span>
+            <span class="registry-sub">Sherwood Registry</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contract" id="contract">
+      <div class="container narrow reveal">
+        <p class="eyebrow center">on-chain</p>
+        <h2 class="section-title center">Token Address</h2>
+        <div class="ca-box">
+          <code id="ca-display" class="ca-address">0xcomingsoon</code>
+          <button id="copy-ca" class="btn btn-primary btn-copy" type="button" title="Copy address">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+        <p id="copy-toast" class="copy-toast" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section chart-section" id="chart">
+      <div class="container reveal">
+        <p class="eyebrow center">live feed</p>
+        <h2 class="section-title center">DexScreener</h2>
+        <p class="section-sub center">Watch $NOX move in real time. Not financial advice.</p>
+        <div class="chart-frame">
+          <div class="chart-frame-glow" aria-hidden="true"></div>
+          <iframe
+            id="dexscreener-embed"
+            class="dexscreener-embed"
+            title="DexScreener $NOX Chart"
+            src="https://dexscreener.com/robinhood/0xcomingsoon?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&chartStyle=1&chartType=usd&interval=15"
+            allow="clipboard-write"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="chart-link-wrap">
+          <a id="dexscreener-link" href="https://dexscreener.com/robinhood/0xcomingsoon" target="_blank" rel="noopener noreferrer" class="text-link">
+            Open full chart on DexScreener →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section buy" id="buy">
+      <div class="container">
+        <p class="eyebrow center">get in</p>
+        <h2 class="section-title center">How To Buy</h2>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Wallet</h3>
+            <p>Set up a wallet that supports Ethereum. Fund it with ETH.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Uniswap</h3>
+            <p>Open Uniswap, connect your wallet, and paste the verified $NOX contract.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Swap</h3>
+            <p>Swap ETH → $NOX. Double-check the address, then confirm.</p>
+          </article>
+        </div>
+        <div class="buy-cta">
+          <a href="https://app.uniswap.org/swap?chain=robinhood&inputCurrency=NATIVE&outputCurrency=0xcomingsoon" target="_blank" rel="noopener noreferrer" class="btn btn-ink btn-lg btn-glow">Buy on Uniswap</a>
+          <a href="https://x.com/HOODBOTX" target="_blank" rel="noopener noreferrer" class="btn btn-outline-ink btn-lg">Follow on X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo-wrap">
+          <img src="assets/logo.jpg" alt="" class="footer-logo" />
+        </span>
+        <div>
+          <strong>NOX</strong>
+          <span>&lt;*Exterminate all humans.txt*&gt;</span>
+        </div>
+      </div>
+      <p class="footer-disclaimer">
+        $NOX is a meme token with no intrinsic value or expectation of financial return.
+        This is not financial advice. DYOR. Community-driven.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
